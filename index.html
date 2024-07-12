@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Adityakumar</span><br> </h1> <br> <span class="small-text">STUDENT | KLE TECHNOLOGICAL UNIVERSITY | TECH  ENTHUSIAST
+            </span>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>I have a strong enthusiasm for technological progress, particularly in Computer Science and Engineering, where my focus lies in Software development, Cloud computing, networking solutions and Machine Learning. Throughout my academic journey at Kletech, I have had the opportunity to explore the dynamic landscape of Al & ML and have gained valuable insights into the importance of applying classical strategies to contemporary projects. Always eager to learn and adapt to new technologies. Open to collaboration and excited to contribute to innovative projects.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience & Training</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('Courses and certifications')">Courses and certifications</p>
+
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Languages</span><br>C/C++,Python,JAVA,ARM,HTML,SQL,MATLAB</li>
+                        <li><span>Cloud/Databases</span><br>Juniper,AWS</li>
+                        <li><span>Soft skills</span><br> Communication, Leadership, Problem Solving, Teamwork, Time management, Sports</li>
+                        <li><span>Areas of Interest</span><br>Technology, Organizationl works, Team Building, volunteering, sports, Event management.</li>
+                        <li><span> Positions of Responsibility</span><br>General Secretary,EC department,KLE Technological University</li>
+                        <li><span> Achievements</span><br> National level sports athlete [Ball badminton], Secured silver medal in state-level ball badminton competition, Participated in over 10 state and national tournaments</li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Project intern</span><br>Centre of excellence in Visual intelligence,Hubballi [CEVI]<br>Worked on various Computer vision  projects and tasks, including the application of machine
+                            learning and artificial intelligence along with the understanding of WI-FI CSI signals.
+                            </li>
+
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2021-2025</span><br>KLE Technological University, Hubli <br> <span class="small-text">B.E Electronics and Communication Engineering</li>
+                        <li><span>2019-2021</span><br>MES Pre-University College <br> <span class="small-text">Pre-university education</li>
+                        <li><span>2019</span><br>Ave Maria High School<br> <span class="small-text">High school</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="Courses and certifications">
+                    <ul>
+                        <li><span>Udemy</span><br> Learn Python Programming- Beginner to Master <br> <span class="small-text"></li>
+                        <li><span>Great Learning</span><br> Machine Learning Algorithms <br> <span class="small-text"></li>
+                        <li><span>Juniper</span><br> Learning- Junos, Associate (JNCIA-Junos)<br> <span class="small-text"></li>
+                        <li><span>Juniper</span><br> Open Learning- Cloud, Associate (JNCIA-Cloud) <br> <span class="small-text"></li>
+                        <li><span>Udemy</span><br>  Learn Java Programming- Beginner to Master(Udemy)                            <br> <span class="small-text"></li>
+                        <li><span>Udemy</span><br> Mastering Data structures and algorithms using C and C++<br> <span class="small-text"></li>   
+                    </ul>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>3D content creation and refinement</h3>
+                    <p style="text-align: justify;">This project focuses on developing a learning-based algorithm for transforming 
+                        2D images into high-quality 3D models, facilitating efficient and realistic 3D content creation for interactive
+                         applications in video games, augmented reality (AR), and virtual reality (VR).The gaming industry 
+                        extensively uses point clouds to build detailed 3D models, creating realistic environments in AR and VR games.Additionally,
+                         heritage reconstruction benefits from these techniques by enabling the digital preservation and restoration of historical sites and artifacts.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Human based activity recognition using wifi based CSI signal</h3>
+                    <p style="text-align: justify;">This project focuses on human activity recognition using WiFi-based Channel State Information (CSI) signals. It
+                        involves collecting CSI data from 2 ESP-32, preprocessing the signals to extract relevant features like amplitude,
+                        phase, and frequency shifts, and then training machine learning models such as deep neural networks or support
+                        vector machines for activity classification. The project aims to achieve high accuracy in recognizing human activities such as walking, running, sitting, and
+                        standing based solely on the variations in WiFi signals caused by these activities</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-4.png">
+                <div class="layer">
+                    <h3>Class specific image to 3D reconstruction</h3>
+                    <p style="text-align: justify;">Developed a learning-based algorithm for class-specific image to 3D reconstruction, focusing on generating diverse 3D models from 2D images by varying the parameters of the latent vector. This approach enables the creation of distinct and varied 3D structures within a specific object class.This project contributes to the field of 3D computer vision by providing a method to generate varied and detailed 3D models from simple 2D images, with potential applications in virtual reality, augmented reality, and robotics.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Comparative Analysis of Canny Edge Detection Algorithm Using OpenMP, CUDA, and OpenCL</h3>
+<p style="text-align: justify;">
+    Parallel Computing Techniques: Conducted a comparative analysis of the Canny edge detection algorithm using
+    OpenMP, CUDA, and OpenCL, evaluating their performance in terms of execution time, efficiency, and resource
+    utilization.<br>
+    Performance Optimization: Implemented the Canny edge detection algorithm on multi-core CPUs and NVIDIA
+    GPUs, achieving significant speedups, with CUDA achieving the highest performance, followed by OpenCL and
+    OpenMP.<br>
+    Cross-Platform Compatibility: Demonstrated the trade-offs between performance and portability, highlighting
+    CUDA's efficiency for GPU processing and OpenCL's flexibility for heterogeneous computing environments.
+</p>
+
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+</head>
+<body>
+<div id="reasearch and publication">
+    <div class="container">
+       
+
+    </div>
+</div>
+</body>
+
+
+ <!-- Other head elements -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i>nsaditya379@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/adunaik"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/adityakumar-naik-8389861a7?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+    
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
